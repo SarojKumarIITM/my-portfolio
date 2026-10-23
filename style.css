@@ -55,20 +55,36 @@ body {
 .home {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     justify-content: space-between;
-    height: 100vh;
+    height: auto;
     background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) no-repeat;
     background-size: cover;
-    background-position: center;
+  /*  background-position: center; */
     display: flex;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 100px 10% 40px;
 }
 
 .home-content {
     max-width: 600px;
 }
 
+.home-buttons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.home-buttons .btn-box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
@@ -1586,5 +1602,156 @@ section{
 @media (prefers-reduced-motion: reduce) {
     .about-img img {
         animation: none;
+    }
+}
+
+/* =================================
+   HOME SECTION RESPONSIVE
+================================= */
+
+/* Tablet and small laptops */
+@media (max-width: 1024px) {
+    .home {
+        padding: 100px 5% 50px;
+        gap: 30px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+    .home {
+        min-height: 100vh;
+        height: auto;
+        padding: 100px 6% 40px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        background-position: center;
+    }
+
+    .home-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1.2;
+        overflow-wrap: anywhere;
+    }
+
+    .home-content h3 {
+        font-size: clamp(18px, 4.8vw, 23px);
+        line-height: 1.5;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 15px 0;
+    }
+
+    .home-sci {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .home-content .btn-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .btn-box {
+        width: 100%;
+    }
+
+    .btn-box a {
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .home {
+        padding: 90px 5% 35px;
+        gap: 25px;
+    }
+
+    .home-content h1 {
+        font-size: 29px;
+    }
+
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .home-content p {
+        font-size: 13px;
+    }
+
+    .home-content .btn-box {
+        gap: 10px;
+    }
+
+    .home-content .btn-box a {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .home-buttons {
+        gap: 10px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .home-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-buttons .btn-box {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+    .home-buttons {
+        gap: 8px;
+    }
+
+    .home-buttons .btn-box {
+        font-size: 12px;
+        padding: 9px 12px;
     }
 }
