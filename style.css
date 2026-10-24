@@ -56,16 +56,14 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: auto;
-    background-image: url(assest/Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) ; 
+    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) no-repeat; 
     background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat; 
+  /*  background-position: center; */
     display: flex;
     align-items: center;
     padding: 100px 10% 40px;
-    box-sizing: border-box;
 }
 
 .home-content {
@@ -1208,6 +1206,7 @@ body {
     color: #c4b5fd;
     font-size: 12px;
     font-weight: 600;
+    
 }
 
 .project-status::before {
@@ -1770,6 +1769,6 @@ section{
         min-height: 100vh;
         height: auto;
         box-sizing: border-box;
-        padding: 100px 20px 40px;
+        padding-top: 100px;
     }
 }
