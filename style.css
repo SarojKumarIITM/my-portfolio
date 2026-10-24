@@ -56,14 +56,16 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    justify-content: space-between;
+    justify-content: space-between; 
     height: auto;
-    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) no-repeat; 
+    background-image: url(assest/Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) ; 
     background-size: cover;
-  /*  background-position: center; */
+    background-position: center top;
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     padding: 100px 10% 40px;
+    box-sizing: border-box;
 }
 
 .home-content {
@@ -1768,6 +1770,6 @@ section{
         min-height: 100vh;
         height: auto;
         box-sizing: border-box;
-        padding-top: 100px;
+        padding: 100px 20px 40px;
     }
 }
