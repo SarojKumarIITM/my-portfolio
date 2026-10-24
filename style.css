@@ -58,7 +58,7 @@ body {
     min-height: 100vh;
     justify-content: space-between;
     height: auto;
-    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) no-repeat;
+    background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.jpeg) no-repeat; 
     background-size: cover;
   /*  background-position: center; */
     display: flex;
@@ -76,6 +76,7 @@ body {
     gap: 12px;
     flex-wrap: wrap;
 }
+
 
 .home-buttons .btn-box{
     display: inline-flex;
@@ -1753,5 +1754,19 @@ section{
     .home-buttons .btn-box {
         font-size: 12px;
         padding: 9px 12px;
+    }
+}
+
+/* Fix Background Img on Mobile*/
+
+@media screen and (max-width:767px) {
+    .home {
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: #061525;
+        min-height: 100vh;
+        height: auto;
+        box-sizing: border-box;
     }
 }
